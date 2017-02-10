@@ -1,0 +1,48 @@
+extend layout
+
+head
+	title Global Courier Services Appreation Site
+block content
+	section#main
+		h1 Testing Chat
+		article
+			p
+				| For this test, we decided to test whether the chat message has 
+				| successfully been added to the mongo database after the user
+				| typed a message. We test this case by retrieving the message from
+				| the database by its message and then confirm the message by its time
+				| that matches with the user.
+
+		h1 Testing Leaderboard
+		article
+			p
+				| For this test, we wanted to make sure that the leaderboard 
+				| only shows the top ten users that scored the highest on the 
+				| game. We populated our database with more than ten scores to 
+				| see if the leaderboard does indeed only consist of the top ten
+				| players. We successfully passed the test with only the top ten players appearing
+				| in the leaderboard.
+		h1 Testing Account
+		article
+			p
+				| For this test, we wanted to test duplicate account registration whether that is
+				| prevented from the system as well as whether account creation also produced a document in the
+				| Scores collection in the mongo database. We designed this test to first populate the Account 
+				| collection with a existing user name to see if it blocks the creation. Then as we needed the score
+				| collection to have default 0 scores added for each difficulty. We tested this by creating 
+				| new users and checking if they appeared in mlab
+		h1 Testing Score
+		article
+			p
+				| To test the score we created multiple accounts ensureing that each had the default 0 score
+				| correctly set. after this we played the game and submitted a few sample scores and ensured only
+				| the desired score was updated and only if it was less than the new score.
+		h1 Testing with Mocha
+		article
+			p
+				| We initially wanted to test our webapp with mocha and the should modules and wrote validation tests for it but unfortunately, we
+				| were not able to run mocha so we were not able to see if our validation tests worked or not. We designed our tests to see if the data creation were submitted to the database successfully and test
+				| whether the data removal was successful as well. We had four validation tests testing account, score, chat, and comment data creations. 
+
+
+

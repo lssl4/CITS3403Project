@@ -1,0 +1,25 @@
+extend layout
+head
+
+block content
+	section#main
+		section#intro
+			h1 Comment Section
+		
+			table#comment
+				tr
+					th Comment
+					th Date
+				each c in comments
+					tr
+						td#comBody <span class="comUser">#{c.user} :</span><br> #{c.comment}
+						td#comDate #{c.date.toDateString()} 
+						
+			br
+			if(user)
+				form(action='/comment', method='post')
+					label(for='comment') Comment     
+					input(id = 'comment' , type = 'text', name = 'comment')
+					input(type='submit', value='Submit')
+			if(!user)
+				p You have to be logged in to be able to post! 

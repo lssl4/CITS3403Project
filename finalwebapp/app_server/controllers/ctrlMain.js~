@@ -1,0 +1,32 @@
+module.exports.index = function(req, res, next) {
+  res.render('index', {title: 'Delivery Appreciation'});
+};
+
+module.exports.rules = function(req, res, next) {
+  res.render('gamerules', {title: 'Game Rules'});
+};
+
+module.exports.game = function(req, res, next) {
+  res.render('game', {title: 'Game'});
+};
+
+module.exports.about = function(req, res, next) {
+  res.render('about', {title: 'About'});
+};
+
+module.exports.design = function(req, res, next) {
+  res.render('design', {title: 'Design'});
+};
+
+module.exports.test = function(req, res, next) {
+  res.render('testing', {title: 'Game Rules'});
+};
+
+module.exports.ref = function(req, res, next) {
+  res.render('references', {title: 'Game'});
+};
+
+module.exports.comment = function(req, res, next) {
+  res.render('comment', {title: 'Comment Section'});
+};
+

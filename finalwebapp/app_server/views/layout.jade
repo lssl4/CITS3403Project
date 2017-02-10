@@ -1,0 +1,69 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/mainStyle.css')
+		meta(charset='UTF-8')
+		script(src="/socket.io/socket.io.js")
+		script(src="http://code.jquery.com/jquery-1.11.1.js")
+		script.
+			console.log('loading script');
+			var socket = io();
+			console.log('connected');
+
+			function send(){
+			  console.log('send');
+			  var message = document.getElementById('message');
+			  socket.emit('message', message.value);
+			  message.value = '';
+			};
+
+			socket.on('message', function(msg){
+			  var messages = document.getElementById('messages');
+			  var newText = document.createElement('li');
+			  newText.innerHTML = msg;
+			  messages.appendChild(newText);
+			});
+	body(onload='modTime()')
+		script(src='/javascripts/time.js')
+		
+
+		header 
+			.logo
+				img(src='images/logo.png', alt='Delivery Appreciation Logo')
+		
+			if (!user)
+				form(action='/login') 
+					button(class='loginB', type='submit', value='Login') Log In
+				br
+				form(action='/signup')
+					button(class='signupB',type='submit', value='Sign Up') Sign Up
+			if(user)
+				.logged
+					p 
+					| You are currently logged in as #{user.username}
+					form(action='/logout') 
+						button(class='loginB', type='submit', value='Logout') Log Out
+	
+		nav#thenav
+			ul
+				li
+					a(href='/') Home 
+				li
+					a(href='/gamerules') Game Rules
+				li
+					a(href='/game') Game
+				li
+					a(href='/leaderboard') Leaderboard
+				li
+					a(href='/about') About
+				li
+					a(href='/design') Design
+				li
+					a(href='/testing') Testing
+				li
+					a(href='/comment') Comment
+
+	block content
+	footer
+		| Composed by: Alex Miller, Shaun Leong and Trae Shaw

@@ -1,0 +1,61 @@
+var express = require('express');
+var router = express.Router();
+var ctrlMain = require('../controllers/ctrlMain');
+
+
+var passport = require('passport');
+var Account = require('../models/account');
+
+/* GET home page. */
+router.get('/', ctrlMain.index);
+
+/* GET Nav pages. */
+router.get('/gamerules', ctrlMain.rules);
+
+router.get('/game', ctrlMain.game);
+
+router.get('/about', ctrlMain.about);
+
+router.get('/design', ctrlMain.design);
+
+router.get('/testing', ctrlMain.test);
+
+router.get('/references', ctrlMain.ref);
+
+
+router.get('/signup', function(req, res, next) {
+  res.render('signup', {});
+});
+
+router.post('/signup', function(req, res) {
+	Account.
+		register(new Account({ username : req.body.username}),
+			req.body.password,
+			function(err, account) {
+				if (err) {
+					return res.render('signup', {account : account});
+				}
+				passport.authenticate('local')(req, res, function () {
+					res.redirect('/');
+				});
+			});
+});
+
+router.get('/chat', function(req, res, next) {
+  res.render('chat', {});
+});
+
+router.get('/login', function(req, res, next) {
+  res.render('login', {user : req.user});
+});
+
+router.post('/login', passport.authenticate('local'), function(req, res){
+	res.redirect('/');
+});
+
+router.get('/logout', function(req, res) {
+	req.logout();
+		res.redirect('/');
+});
+
+module.exports = router;

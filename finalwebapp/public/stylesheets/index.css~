@@ -1,0 +1,223 @@
+*{
+
+	font-family: Calibri, Arial, sans-serif;
+}
+
+
+.logo {
+	display: inline-block;
+    float: left;
+    z-index: 0;
+}
+button.signupB{
+	background-color: #aa7243;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	float: right;	
+	margin-right: 20px;
+	border: 1px solid #804000;
+	margin-top: 20px;
+}
+
+button.loginB {
+	background-color: #aa7243;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 24px;
+	float: right;	
+	margin-right: 20px;
+	border: 1px solid #804000;
+	margin-top: 10px;
+}
+
+
+button.loginB:hover, button.signupB:hover{
+	cursor: pointer;
+}
+
+header{
+
+	margin: 0 0 2% 0;
+	text-align: center;
+	font-size: 2em;
+}
+
+footer{
+
+	margin: 2% 0 2% 0;
+	text-align: center;
+	font-size: 1em;
+	color: white;
+	background: #804000;
+}
+section#main{
+	margin: 2% 20% 0% 20%;
+	background-color: white;
+	padding: 2%;
+	padding-top: 1%;
+	min-width: 240px
+}
+body{
+	background: #DEB887;
+	margin: 0%;
+	min-width: 800px;
+}
+
+h1{
+	margin: 2% auto;
+	text-align: center;
+}
+
+h4{
+	margin: 2% auto;
+
+
+}
+
+/*Influenced from: (W3schools.com 2016)*/
+
+#thenav {
+	display: inline-block;
+	border-bottom: 5px solid #804000 ;
+	width: 100%;
+	background-color: #aa7243;
+	height: 48px;
+}
+#thenav ul{
+
+	list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#thenav li{
+	display: inline-block;
+	width:10%;
+	height:100%;
+	min-width: 130px;
+}
+
+
+
+#thenav a{
+	padding: 12px 14px;
+	display: block;
+	text-decoration: none;
+	font-size: 18px;
+	font: Times;
+	color: black;
+
+
+}
+
+#theNav li:hover:not(.active){
+    background-color: #804000;
+}
+
+.active {
+    background-color: #804000;
+}
+
+article{
+	/*To make sure that new articles are under floating elements */
+	clear: both;
+	margin: 3% auto;
+
+}
+
+#thenav li:hover {
+
+    background-color: #804000;
+}
+
+
+/* Taken from: (Webdesignerwall.com 2011)*/
+.centerVideo{
+	
+	margin-top: 5%;
+	margin-bottom: 5%;
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+
+
+}
+
+
+.centerImages{
+	width: 50%;
+	margin: 5% auto;
+	display: block;
+
+}
+
+.naturalImages{
+	margin: 5% auto;
+	display: block;
+}
+
+/* Taken from: (Webdesignerwall.com 2011)*/
+iframe{
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+figcaption {
+ 	margin: 2% auto;
+    text-align: center;
+}
+
+
+.gamebutton{
+	margin: 5% auto;
+	width: 30%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border-radius: 10px;
+	display: block;
+	padding: 2%;
+	font-size: 1.5em;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	background-color: #91623b;
+	border: 2px #804000 solid;
+
+}
+
+.gamebutton:hover{
+
+	background-color: #6d492c;
+}
+
+
+/*CSS for references.html*/
+
+
+#references li{
+
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+/*CSS for game.html*/
+
+#myGame{ 
+	background: #fff;
+	width: 80%;
+	display: block;
+	margin: 5% auto;
+	
+}
+
+

@@ -1,0 +1,55 @@
+extend layout
+html
+head
+    title Game Rules
+block content
+ section#main
+    header Game Rules
+    section
+      h1 Sorting Facility Game
+      article
+        h3 Introduction
+        p
+          | The rules for the game are quite simple, use the 
+          strong up
+          |  and 
+          strong down
+          |  arrow keys to move the 
+          strong truck
+          | . 
+          | 		Avoid hitting the 
+          strong drains
+          |  potentialy damaging your packages, and collect the 
+          strong mail
+          |  to get a high score. 
+          | 		As you collect mail without mising one your 
+          strong score multiplier
+          |  will increase, but miss one and it resets.
+          br
+          | Press 1, 2, or 3 at the start or game over screen to select your difficulty.
+          | 		1 being easy (green), 2 being normal (blue), 3 being hard (red).
+          br
+          | 		The difficulty is displayed by the circle at the bottom of the screen.
+      article
+        h3 Game Overview
+        img.centerImages(alt='A diagram of the game', src='images/game.jpg')
+        p
+          | This is a diagram of the game. It consists of a multi lane path which has obstacles(drains) and you must collect the mail whilst avoiding the drains.
+        h5 Drains
+        p
+          | These are your standard obstacle. There are many along the journey and you must avoid colliding with them to collect your mail safely.
+        img.centerImages(src='images/drain.jpg', alt='Drains')
+        h5 Mail
+        p
+          | These are the items which you must collect in order to score points and maintain your multiplier.
+        img.naturalImages(src='images/mail.jpg', alt='Mail')
+        h5 Multipliers
+        p
+          | Multipliers are the fastest way to earn points. As you consecutively collect mail your multiplier will increase. If you miss a mail it will reset to standard.
+      article
+        img.centerImages(src='images/multiplier.jpg', alt='Multiplier')
+        h3 Goal
+        p
+          | The goal of this game is to collect as much mail and gain as many possible points without colliding with a drain. Good luck!
+      a.gamebutton(href='/game')
+        | Play Game Now!

@@ -1,0 +1,305 @@
+*{
+
+	font-family: Calibri, Arial, sans-serif;
+}
+
+
+.logo {
+	display: inline-block;
+    float: left;
+    z-index: 0;
+}
+.comUser{
+	text-align: center;
+	color: #804000;
+	font-size: 16px; 
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+table#comment{
+	width: 100%;
+}
+
+td#comDate{
+	width: 20%;
+}
+
+.logged{
+	display: inline-block;
+	float: right;
+	z-index: 0;
+	font-family: Calibri;
+	font-size: 20px;
+	vertical-align: bottom;
+	padding-right: 5px;
+}
+button.signupB{
+	background-color: #aa7243;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 20px;
+	float: right;	
+	margin-right: 20px;
+	border: 1px solid #804000;
+	margin-top: 20px;
+}
+
+button.loginB {
+	background-color: #aa7243;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 5px 24px;
+	float: right;	
+	margin-right: 20px;
+	border: 1px solid #804000;
+	margin-top: 10px;
+}
+
+button.loginB:hover, button.signupB:hover{
+	cursor: pointer;
+}
+
+table, tr, th, td{
+	border: 2px solid black;
+	border-collapse: collapse;
+}
+
+
+header{
+
+	margin: 0 0 2% 0;
+	text-align: center;
+	font-size: 2em;
+}
+
+footer{
+	display: inline-block;
+	margin: 2% 0 2% 0;
+	text-align: center;
+	width: 100%;
+	font-size: 1em;
+	color: white;
+	background: #804000;
+	width: 100%;
+}
+
+section#test{
+	position: relative;
+}
+section#main{
+	margin: 2% 20% 0% 20%;
+	background-color: white;
+	padding: 2%;
+	padding-top: 1%;
+	min-width: 240px;
+	
+}
+body{
+	background: #DEB887;
+	margin: 0%;
+	min-width: 800px;
+}
+
+h1{
+	margin: 2% auto;
+	text-align: center;
+}
+
+h4{
+	margin: 2% auto;
+
+
+}
+#messages > li {
+	display: block;
+	text-decoration: none;
+	list-style: none;
+	border-bottom: 2px solid black;
+}
+#messages{
+	margin: 0%;
+	padding: 0%;
+	list-style: none;
+	left:0 px;
+}
+
+#chatwindow{
+	margin: 5px 5px 5px 5px;
+	height: 80%;
+	border: 3px solid black;
+	background-color: white;
+	overflow: auto;
+	max-width: calc(100%-10px);
+}
+#msgForm{
+	bottom: 0px;
+}
+#chat{
+	margin-top: 4%;
+	margin-bottom: 2%;
+	margin-right: 10px;
+	min-height: 150px;
+	z-index: 10;
+	position: absolute;
+	max-width: calc(20%-20px);
+	height: 80%;
+	right: 0px;
+	top: 0px;
+	background-color: white;
+	border: 3px solid black;
+	
+}
+/*Influenced from: (W3schools.com 2016)*/
+
+#thenav {
+	display: inline-block;
+	border-bottom: 5px solid #804000 ;
+	width: 100%;
+	background-color: #aa7243;
+	height: 48px;
+	height: 100%;
+}
+#thenav ul{
+
+	list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+#thenav li{
+	display: inline-block;
+	width:10%;
+	height:100%;
+	min-width: 130px;
+}
+
+
+
+#thenav a{
+	padding: 14px 16px;
+	display: block;
+	text-decoration: none;
+	font-size: 18px;
+	font: Times;
+	color: black;
+
+
+}
+
+#theNav li:hover:not(.active){
+    background-color: #804000;
+}
+
+.active {
+    background-color: #804000;
+}
+
+article{
+	/*To make sure that new articles are under floating elements */
+	clear: both;
+	margin: 3% auto;
+
+}
+
+#thenav li:hover {
+
+    background-color: #804000;
+}
+
+
+/* Taken from: (Webdesignerwall.com 2011)*/
+.centerVideo{
+	
+	margin-top: 5%;
+	margin-bottom: 5%;
+    position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+
+
+}
+
+
+.centerImages{
+	width: 50%;
+	margin: 5% auto;
+	display: block;
+
+}
+
+.naturalImages{
+	margin: 5% auto;
+	display: block;
+}
+
+/* Taken from: (Webdesignerwall.com 2011)*/
+iframe{
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+
+
+figcaption {
+ 	margin: 2% auto;
+    text-align: center;
+}
+
+
+.gamebutton{
+	margin: 5% auto;
+	width: 30%;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border-radius: 10px;
+	display: block;
+	padding: 2%;
+	font-size: 1.5em;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	background-color: #91623b;
+	border: 2px #804000 solid;
+
+}
+
+.gamebutton:hover{
+
+	background-color: #6d492c;
+}
+
+
+/*CSS for references.html*/
+
+
+#references li{
+
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+/*CSS for game.html*/
+
+#myGame{ 
+	background: #fff;
+	width: 80%;
+	display: block;
+	margin: 5% auto;
+	
+}
+.time {
+	float: right;
+}
+.mod{
+	float: left;
+}
+
+

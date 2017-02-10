@@ -1,0 +1,17 @@
+extend layout
+
+head
+    title Global Courier Services Appreation Site
+block content
+ section#main
+    #signup
+          h1 Fill in the details to Sign Up!
+          p Register here
+          br
+          form(action="/signup",method="post")
+            label(for='username') Enter Username:
+            input(id='username', type = 'text', name = 'username')
+            label(for='password') Enter Password
+            input(id='password',type ='password', name='password')
+            input(type='submit', value='Register')
+

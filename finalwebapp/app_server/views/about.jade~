@@ -1,0 +1,36 @@
+extend layout
+
+head
+    title Global Courier Services Appreation Site
+block content
+ section#main
+    section#intro
+      h1 Short Biographies
+      article
+        p
+          | Our group consists of: Alex Miller, Shaun Leong and Trae Shaw
+       section#Alex
+        h2 Alex's Bio
+        p
+          | Hello I am Alex
+       section#Shaun
+        h2 Shaun's Bio
+        p
+          | Hello I am Shaun
+       section#Trae
+        h2 Trae's Bio
+        p
+          | Hello I am Trae
+          br
+          | First Name: Trae
+          br
+          | Last Name: Shaw
+          br
+          | Student Number: 21521443
+          br
+          | D.O.B: 11/07/1996
+          br
+          | Interests: Anime and Gaming
+ footer#myexample
+  | Composed by: Alex Miller, Shaun Leong and Trae Shaw
+>>>>>>> withJade

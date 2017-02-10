@@ -1,0 +1,12 @@
+extend layout
+
+head
+    title Global Courier Services Appreation Site
+block content
+ section#main
+     h1 Testing
+      article
+        p
+          | For testing... we have... (insert testing here)
+ footer#myexample
+  | Composed by: Alex Miller, Shaun Leong and Trae Shaw

@@ -1,0 +1,13 @@
+extend layout
+
+html
+head
+    title Appreciation game for Global Courier Services
+block header
+  header Game
+block content
+    canvas#myGame(width='720', height='480')
+      | If you see this message, please get a new broswer since your browser does not support canvas
+    script(src='javascripts/game.js')
+    footer#myexample
+      | Composed by: Alex Miller, Shaun Leong and Trae Shaw

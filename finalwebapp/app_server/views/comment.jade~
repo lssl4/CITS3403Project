@@ -1,0 +1,15 @@
+extend layout
+
+head
+    title Global Courier Services Appreation Site
+block content
+ section#main
+    section#intro
+      h1 Comment Section
+      article
+        p
+          |
+ footer#myexample
+  | Composed by: Alex Miller, Shaun Leong and Trae Shaw
+>>>>>>> withJade
+

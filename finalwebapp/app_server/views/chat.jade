@@ -1,0 +1,14 @@
+extends layout
+
+head
+    script(src="/socket.io/socket.io.js")
+    script(src="http://code.jquery.com/jquery-1.11.1.js")
+block content
+  section#main
+    #chatwindow(width='100%')
+      ul(id="messages")
+    br
+    form(action="", id='msgForm', onSubmit='return false;')
+      input(id="message" autocomplete="off")
+      button(type='button', onClick='send();') Send
+

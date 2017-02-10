@@ -1,0 +1,25 @@
+extend layout
+
+head
+    title Global Courier Services Appreation Site
+block content
+ section#main
+    #login
+          h1 Log In!
+          form(action='/', method='post')
+              label
+                | Username	
+                span.req *
+              input(type='text', required='required', autocomplete='off')
+              br
+              br
+              label
+                | Password	
+                span.req *
+              input(type='password', required='required', autocomplete='off')
+            p.forgot
+              a(href='#') Forgot Password?
+            button.button.button-block Log In
+ footer#myexample
+  | Composed by: Alex Miller, Shaun Leong and Trae Shaw
+

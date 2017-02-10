@@ -1,0 +1,16 @@
+extend layout
+
+head
+    title Global Courier Services Appreciation Site
+block content
+ section#main
+    #login
+          h1 Log In!
+          p Login to our Delivery Appreciation site here.
+          br
+          form(action="/login",method="post")
+            label(for='username') Enter username:
+            input(id='username', type = 'text', name = 'username')
+            label(for='password') Enter password:
+            input(id='password', type = 'password', name = 'password')
+            input(type='submit', value='Submit')
